@@ -1,7 +1,7 @@
 # ESP32 AZ-Delivery Touch 
 Connect Display using SPI
 
-# Functionality
+# Basic-Functionality
 * Wifi Connection  
 * MQTT Connection 
 * Self Monitoring connectivity and reconnect on connection loss
@@ -10,19 +10,20 @@ Connect Display using SPI
 * CRON System which sends different MQTT Topics every 10s, 30s and 60s
 * Automatic Versioning System
   * Version Number is incremented after Upload to Production Target
-* Measure and Publish all BME680-values in given interval (default 10s)
+# Device Specific-Functionality
+* Write Text on Display
+* Scroll Text when Display is full
+* Print text received via MQTT on Display
 
 # Available MQTT-Commands 
 * Commands must be published to topic `[PREFIX]/cmd`
 * Responses are published to `[PREFIX]/result`
 
 ## Set Mesaurement Interval
-### `interval NUM`
-Set Measurement Interval to `NUM` Seconds (1-3600)
+### `display "String"`
+Display `String` on the LCD, scroll if needed
  Example:
- * command: `interval 10` 
- * result: `New Interval :10s`
-
+ * command: `display "Hello World"` 
 
 ## System related Commands
 ### `reset`
