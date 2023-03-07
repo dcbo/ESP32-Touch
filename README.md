@@ -19,7 +19,7 @@ Connect Display using SPI
 * Commands must be published to topic `[PREFIX]/cmd`
 * Responses are published to `[PREFIX]/result`
 
-## Set Mesaurement Interval
+## Print Text on Display
 ### `display "String"`
 Display `String` on the LCD, scroll if needed
  Example:
