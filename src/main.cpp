@@ -146,7 +146,7 @@ portMUX_TYPE mux = portMUX_INITIALIZER_UNLOCKED;
 #define PARSER_NUM_ARGS       3   // limit number of arguments
 #define PARSER_CMD_LENGTH     10  // limit length of command names [characters]
 #define PARSER_ARG_SIZE       64  // limit size of all arguments [bytes]
-#define PARSER_RESPONSE_SIZE  64  // limit size of response strings to 64 bytes
+#define PARSER_RESPONSE_SIZE  64  // limit size of response strings [bytes]
 typedef CommandParser<PARSER_NUM_COMMANDS, PARSER_NUM_ARGS, PARSER_CMD_LENGTH, PARSER_ARG_SIZE, PARSER_RESPONSE_SIZE> MyCommandParser;
 MyCommandParser parser;
 // Command Handler Prototypes
